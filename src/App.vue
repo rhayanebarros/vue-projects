@@ -5,28 +5,25 @@
 </template>
 
 <style lang="scss">
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// Resets and base
+@import './assets/style/resets/reset.scss';
+@import './assets/style/_utils.scss';
+// @import './assets/style/_variables.scss'; __ globally imported via vue.config.js
+
 body {
-  background-color: #1a1d23;
-  color: #fff;
+  background-color: $body-color;
+  font-family: $font;
+  font-weight: $regular;
+  color: $gray-dark;
+  overflow: hidden;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #fff;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #fdd208;
-
-    &.router-link-exact-active {
-      color: #0298da;
-    }
-  }
+  position: relative;
+  min-height: 100vh;
 }
 </style>

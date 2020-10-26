@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Gif Programação" src="https://media.giphy.com/media/cNfIqjpCY1zqfaLmd8/giphy.gif">
-    <HomeContent msg="Hello World!"/>
+    <HomeContent msg="Hello world!"/>
   </div>
 </template>
 
@@ -16,3 +15,7 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+
+</style>
