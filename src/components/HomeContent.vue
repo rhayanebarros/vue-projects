@@ -8,13 +8,14 @@
       <div class="home-content__header__col1">
         <h1>{{ msg }}</h1>
         <h2>Rhayane Cassemiro</h2>
-        <h3>desenvolvedora front-end</h3>
+        <h3>front end developer</h3>
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/rhayanebarroscassemiro/" title="linkedin" target="_blank">
             linkedin
             </a>
           </li>
+          <span>slash</span>
           <li>
             <a href="https://github.com/rhayanebarros" title="github" target="_blank">
               github
@@ -24,7 +25,7 @@
       </div>
 
       <div class="home-content__header__col2">
-        <h2>Bom Retiro - São Paulo</h2>
+        <h2>Bom Retiro<span>dash</span>São Paulo</h2>
         <h3>
           <a href="mailto:rhayanebarros@gmail.com" title="email">
             rhayanebarros<span>at</span>gmail<span>dot</span>com
@@ -37,7 +38,10 @@
     <div class="home-content__list">
       <ol>
         <li>
-          <router-link to="/about">caixa eletrônico</router-link> <span>2019</span>
+          <router-link to="/caixa">caixa eletrônico</router-link><span>2019</span>
+        </li>
+        <li>
+          <router-link to="/about">todo list</router-link><span>2019</span>
         </li>
       </ol>
 
@@ -97,14 +101,17 @@ export default {
 
       ul {
         display: flex;
-        justify-content: space-between;
-        max-width: 270px;
-        width: 100%;
         li a {
           color: $yellow;
           font-size: 20px;
           line-height: 24px;
-          margin-right: 10px;
+        }
+
+        span {
+          color: $blue;
+          font-weight: $regular;
+          font-size: 14px;
+          margin: 0 6px;
         }
       }
     }
@@ -116,6 +123,15 @@ export default {
         font-weight: $medium;
         font-size: 24px;
         line-height: 28px;
+
+        span {
+          color: $blue;
+          font-weight: $regular;
+          font-size: 14px;
+          margin: 0 2px;
+          display: inline-block;
+          vertical-align: text-top;
+        }
       }
       h3 a {
         color: $yellow;
@@ -126,7 +142,7 @@ export default {
         span {
           color: $blue;
           font-weight: $regular;
-          font-size: 16px;
+          font-size: 14px;
           margin: 0 2px;
           display: inline-block;
           vertical-align: text-top;
@@ -143,6 +159,7 @@ export default {
       li {
         position: relative;
         counter-increment: li;
+        margin-bottom: 10px;
 
         &::before {
           content: counter(li);
