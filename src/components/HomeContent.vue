@@ -1,56 +1,62 @@
 <template>
   <section class="home-content">
-    <!-- <img alt="Gif Programação" src="https://media.giphy.com/media/cNfIqjpCY1zqfaLmd8/giphy.gif"> -->
-    <img class="home-content__img" src="../assets/images/programador-64.png" alt="programadora">
 
     <div class="home-content__header">
+      <img class="home-content__header__img" src="../assets/images/rhay.png" alt="programadora">
 
-      <div class="home-content__header__col1">
-        <h1>{{ msg }}</h1>
-        <h2>Rhayane Cassemiro</h2>
-        <h3>front end developer</h3>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/rhayanebarroscassemiro/" title="linkedin" target="_blank">
-            linkedin
+      <div class="home-content__header__cols">
+        <div class="home-content__header__col1">
+          <h2>{{ msg }}</h2>
+          <h1>Rhayane Cassemiro</h1>
+          <h3>front end developer</h3>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/rhayanebarroscassemiro/" title="linkedin" target="_blank">
+              linkedin
+              </a>
+            </li>
+            <span>slash</span>
+            <li>
+              <a href="https://github.com/rhayanebarros" title="github" target="_blank">
+                github
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="home-content__header__col2">
+          <h2>Bom Retiro<span>dash</span>São Paulo</h2>
+          <h3>
+            <a href="mailto:rhayanebarros@gmail.com" title="email">
+              rhayanebarros<span>at</span>gmail<span>dot</span>com
             </a>
-          </li>
-          <span>slash</span>
-          <li>
-            <a href="https://github.com/rhayanebarros" title="github" target="_blank">
-              github
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="home-content__header__col2">
-        <h2>Bom Retiro<span>dash</span>São Paulo</h2>
-        <h3>
-          <a href="mailto:rhayanebarros@gmail.com" title="email">
-            rhayanebarros<span>at</span>gmail<span>dot</span>com
-          </a>
-        </h3>
-
+          </h3>
+        </div>
       </div>
     </div>
 
     <div class="home-content__list">
       <ol>
         <li>
-          <router-link to="/caixa">caixa eletrônico</router-link><span>2019</span>
+          <router-link to="/caixa" title="caixa eletrônico">caixa eletrônico</router-link><span>2020</span>
         </li>
         <li>
-          <router-link to="/about">todo list</router-link><span>2019</span>
+          <router-link to="/about" title="todo list">todo list</router-link><span>2020</span>
+        </li>
+        <li>
+          <a href="https://www.toyotagazooracing.com.br/" title="gazoo racing" target="_blank">toyota gazoo racing</a>
+          <span>2020</span>
+          <p>design by</p>
+          <a class="design" href="https://www.sapientag2.com.br/prodigious/" title="Prodigious" target="_blank">Prodigious</a>
+        </li>
+        <li>
+          <a href="https://banco.bradesco/html/classic/veloe/index.shtm" title="bradesco - veloe" target="_blank">bradesco veloe</a>
+          <span>2019</span>
+          <p>design by</p>
+          <a class="design" href="https://one.com.br/" title="One" target="_blank">One</a>
         </li>
       </ol>
-
     </div>
-
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
   </section>
 </template>
 
@@ -66,45 +72,59 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .home-content {
-  padding: 0 40px;
-
-  &__img {
-    display: block;
-    margin: 40px auto 0;
-  }
+  background-color: $jobs;
 
   &__header {
-    display: flex;
-    padding-top: 40px;
-    justify-content: space-between;
+    background: $header url('../assets/images/oval-1.png') no-repeat left top;
+    padding: 40px;
+
+    &__img {
+      max-width: 400px;
+      width: 100%;
+      margin-left: 100px;
+    }
+
+    &__cols,
+    &__img {
+      vertical-align: middle;
+    }
+
+    &__col1,
+    &__col2,
+    &__img,
+    &__cols {
+      display: inline-block;
+    }
 
     &__col1 {
-      h1 {
+      h2 {
         color: $white;
         font-size: 28px;
         line-height: 32px;
-        font-weight: $medium;
+        font-weight: $regular;
       }
 
-      h2 {
+      h1 {
         color: $rust;
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: $bold;
       }
 
       h3 {
         color: $white;
         font-size: 20px;
-        line-height: 24px;
-        font-weight: $medium;
+        line-height: 28px;
+        font-weight: $regular;
       }
 
       ul {
         display: flex;
+        margin-top: 5px;
         li a {
           color: $yellow;
-          font-size: 20px;
-          line-height: 24px;
+          font-size: 22px;
+          line-height: 26px;
         }
 
         span {
@@ -117,12 +137,13 @@ export default {
     }
 
     &__col2 {
-      align-self: flex-end;
+      margin-left: 150px;
+      text-align: right;
       h2 {
         color: $white;
-        font-weight: $medium;
-        font-size: 24px;
-        line-height: 28px;
+        font-weight: $regular;
+        font-size: 20px;
+        line-height: 24px;
 
         span {
           color: $blue;
@@ -130,13 +151,13 @@ export default {
           font-size: 14px;
           margin: 0 2px;
           display: inline-block;
-          vertical-align: text-top;
+          vertical-align: super;
         }
       }
       h3 a {
         color: $yellow;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 22px;
+        line-height: 26px;
         font-weight: $medium;
 
         span {
@@ -145,14 +166,17 @@ export default {
           font-size: 14px;
           margin: 0 2px;
           display: inline-block;
-          vertical-align: text-top;
+          vertical-align: super;
         }
       }
     }
   }
 
   &__list {
-    margin-top: 100px;
+    padding: 40px;
+    background: $jobs url('../assets/images/oval-2.png') no-repeat right bottom;
+    min-height: 594px;
+
     ol {
       counter-reset: li;
       display: block;
@@ -165,7 +189,7 @@ export default {
           content: counter(li);
           color: $blue;
           position: absolute;
-          top: -5px;
+          top: -3px;
           left: 0;
           font-weight: $regular;
           font-size: 18px;
@@ -175,14 +199,27 @@ export default {
           color: $yellow;
           margin-left: 12px;
           margin-right: 3px;
+          font-size: 24px;
         }
 
         span {
           color: $blue;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: $regular;
           position: absolute;
-          top: -4px;
+          top: -3px;
+        }
+
+        p {
+          display: inline-block;
+          margin-left: 40px;
+          color: $white;
+          font-size: 24px;
+        }
+
+        .design {
+          color: $rust;
+          font-weight: $semi-bold;
         }
       }
     }

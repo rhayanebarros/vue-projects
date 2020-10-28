@@ -20,9 +20,7 @@ body {
   font-family: $font;
   font-weight: $regular;
   color: $gray-dark;
-  overflow: hidden;
-}
-#app {
+  overflow-x: hidden;
   position: relative;
   min-height: 100vh;
 }
