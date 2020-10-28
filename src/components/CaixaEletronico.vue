@@ -1,8 +1,6 @@
 <template>
   <section class="caixa-eletronico">
-    <div class="nav" id="nav">
-      <router-link to="/">voltar</router-link>
-    </div>
+    <Return />
 
     <div class="caixa-eletronico__container">
 
@@ -49,8 +47,13 @@
 </template>
 
 <script>
+import Return from '@/components/shared/Return.vue'
+
 export default {
   name: 'CaixaEletronico',
+  components: {
+    Return
+  },
   methods: {
     somenteNumero (e) {
       var tecla = window.event ? event.keyCode : e.which
@@ -116,32 +119,15 @@ export default {
 .caixa-eletronico {
   padding: 0 40px;
 
-  .nav {
-    margin-top: 40px;
-    a {
-      font-size: 16px;
-      &::before {
-        content: '';
-        background-image: url('../assets/images/left-arrow.svg');
-        background-repeat: no-repeat;
-        width: 15px;
-        height: 15px;
-        background-size: 100% auto;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 5px;
-        cursor: pointer;
-      }
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
   &__container {
+    background: $header url('../assets/images/oval-1.png') no-repeat left top;
+    background-size: 35% auto;
+    border-radius: 8px;
+    max-width: 450px;
+    margin: 60px auto;
     text-align: center;
-    margin-top: 100px;
+    padding: 40px;
+    width: 100%;
 
     &__title {
       color: $rust;
@@ -231,6 +217,7 @@ export default {
     p {
       color: $yellow;
       font-size: 16px;
+      line-height: 20px;
       font-weight: $medium;
     }
   }
