@@ -12,7 +12,7 @@ export default {
 
 <style scoped lang="scss">
 .nav {
-  margin-top: 40px;
+  padding: 40px 0 0 60px;
   a {
     font-size: 16px;
     font-weight: $medium;

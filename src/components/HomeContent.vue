@@ -38,7 +38,7 @@
     <div class="home-content__list">
       <ol>
         <li>
-          <router-link to="/caixa" title="caixa eletrônico">caixa eletrônico</router-link><span>2020</span>
+          <router-link to="/bank" title="caixa eletrônico">caixa eletrônico</router-link><span>2020</span>
         </li>
         <li>
           <router-link to="/about" title="todo list">todo list</router-link><span>2020</span>
@@ -76,12 +76,35 @@ export default {
 
   &__header {
     background: $header url('../assets/images/oval-1.png') no-repeat left top;
-    padding: 40px;
+    background-size: contain;
+    padding: 20px;
+
+    @include above(md) {
+      padding: 40px 20px;
+      background-size: inherit;
+    }
+
+    @include above(lg) {
+      padding: 40px;
+    }
+
+    @include above(xl) {
+      padding: 100px;
+    }
 
     &__img {
-      max-width: 400px;
+      max-width: 230px;
       width: 100%;
-      margin-left: 100px;
+      margin: 60px auto 0;
+
+      @include above(md) {
+        max-width: 349px;
+        margin: 0;
+      }
+
+      @include above(xl) {
+        max-width: 480px;
+      }
     }
 
     &__cols,
@@ -93,29 +116,70 @@ export default {
     &__col2,
     &__img,
     &__cols {
-      display: inline-block;
+      display: block;
+
+      @include above(md) {
+        display: inline-block;
+      }
+    }
+
+    &__cols {
+      width: 100%;
+      max-width: 250px;
+      margin: 40px auto 0;
+
+      @include above(md) {
+        margin: 20px 0 0 0;
+        max-width: 100%;
+      }
+
+      @include above(lg) {
+        max-width: 595px;
+        margin: 60px 0 0 0;
+        vertical-align: middle;
+      }
+
+      @include above(xl) {
+        max-width: 600px;
+        margin: 100px 0 60px;
+      }
     }
 
     &__col1 {
       h2 {
         color: $white;
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 24px;
         font-weight: $regular;
+
+        @include above(md) {
+          font-size: 28px;
+          line-height: 32px;
+        }
       }
 
       h1 {
         color: $rust;
-        font-size: 32px;
-        line-height: 36px;
+        font-size: 26px;
+        line-height: 30px;
         font-weight: $bold;
+
+        @include above(md) {
+          font-size: 32px;
+          line-height: 36px;
+        }
       }
 
       h3 {
         color: $white;
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 26px;
         font-weight: $regular;
+
+        @include above(md) {
+          font-size: 20px;
+          line-height: 28px;
+        }
       }
 
       ul {
@@ -123,6 +187,67 @@ export default {
         margin-top: 5px;
         li a {
           color: $yellow;
+          font-size: 18px;
+          line-height: 22px;
+
+          @include above(md) {
+            font-size: 22px;
+            line-height: 26px;
+          }
+        }
+
+        span {
+          color: $blue;
+          font-weight: $regular;
+          font-size: 13px;
+          margin: 0 6px;
+
+          @include above(md) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &__col2 {
+      margin-top: 15px;
+
+      @include above(md) {
+        margin-top: 0;
+        text-align: right;
+      }
+
+      h2 {
+        color: $white;
+        font-weight: $regular;
+        font-size: 18px;
+        line-height: 22px;
+
+        @include above(md) {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        span {
+          color: $blue;
+          font-weight: $regular;
+          font-size: 13px;
+          margin: 0 2px;
+          display: inline-block;
+          vertical-align: super;
+
+          @include above(md) {
+            font-size: 14px;
+          }
+        }
+      }
+      h3 a {
+        color: $yellow;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: $medium;
+
+        @include above(md) {
           font-size: 22px;
           line-height: 26px;
         }
@@ -130,96 +255,110 @@ export default {
         span {
           color: $blue;
           font-weight: $regular;
-          font-size: 14px;
-          margin: 0 6px;
-        }
-      }
-    }
-
-    &__col2 {
-      margin-left: 150px;
-      text-align: right;
-      h2 {
-        color: $white;
-        font-weight: $regular;
-        font-size: 20px;
-        line-height: 24px;
-
-        span {
-          color: $blue;
-          font-weight: $regular;
-          font-size: 14px;
+          font-size: 13px;
           margin: 0 2px;
           display: inline-block;
           vertical-align: super;
-        }
-      }
-      h3 a {
-        color: $yellow;
-        font-size: 22px;
-        line-height: 26px;
-        font-weight: $medium;
-
-        span {
-          color: $blue;
-          font-weight: $regular;
-          font-size: 14px;
-          margin: 0 2px;
-          display: inline-block;
-          vertical-align: super;
+          @include above(md) {
+            font-size: 14px;
+          }
         }
       }
     }
   }
 
   &__list {
-    padding: 40px;
+    padding: 20px;
     background: $jobs url('../assets/images/oval-2.png') no-repeat right bottom;
-    min-height: 594px;
+    background-size: contain;
+
+    @include above(md) {
+      padding: 40px 20px;
+      min-height: 400px;
+      background-size: inherit;;
+    }
+
+    @include above(lg) {
+      padding: 40px;
+    }
+
+    @include above(xl) {
+      padding: 100px;
+    }
 
     ol {
       counter-reset: li;
       display: block;
+      width: 100%;
+      max-width: 250px;
+      margin: 0 auto;
+
+      @include above(md) {
+        width: inherit;
+        max-width: inherit;
+      }
+
       li {
         position: relative;
         counter-increment: li;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
 
         &::before {
           content: counter(li);
           color: $blue;
-          position: absolute;
-          top: -3px;
-          left: 0;
+          display: inline-block;
+          vertical-align: super;
           font-weight: $regular;
-          font-size: 18px;
+          font-size: 16px;
+
+          @include above(md) {
+            font-size: 18px;
+          }
         }
 
         a {
           color: $yellow;
-          margin-left: 12px;
+          margin-left: 3px;
           margin-right: 3px;
-          font-size: 24px;
+          font-size: 20px;
+
+          @include above(md) {
+            font-size: 24px;
+          }
         }
 
         span {
           color: $blue;
           font-size: 16px;
           font-weight: $regular;
-          position: absolute;
-          top: -3px;
+          display: inline-block;
+          vertical-align: super;
         }
 
         p {
           display: inline-block;
-          margin-left: 40px;
+          margin-left: 12px;
           color: $white;
-          font-size: 24px;
+          font-size: 20px;
+          line-height: 28px;
+
+          @include above(md) {
+            margin-left: 10px;
+            font-size: 24px;
+            line-height: 24px;
+          }
         }
 
         .design {
           color: $rust;
           font-weight: $semi-bold;
+          margin-left: 5px;
+          line-height: 28px;
+
+          @include above(md) {
+            margin-left: 12px;
+            line-height: 24px;
+          }
         }
       }
     }

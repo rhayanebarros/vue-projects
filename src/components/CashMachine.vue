@@ -1,10 +1,9 @@
 <template>
-  <section class="caixa-eletronico">
-    <Return />
+  <section class="cash-machine">
 
-    <div class="caixa-eletronico__container">
+    <div class="cash-machine__container">
 
-      <h1 class="caixa-eletronico__container__title">Banco do Dev</h1>
+      <h1 class="cash-machine__container__title">Banco do Dev</h1>
 
       <form>
         <h3>Digite o valor para saque:</h3>
@@ -36,7 +35,7 @@
       </form>
     </div>
 
-    <div class="caixa-eletronico__requisitos">
+    <div class="cash-machine__requirements">
       <h5>requisitos:</h5>
       <ul>
         <li>O caixa deve entregar o menor número possível de notas;</li>
@@ -47,13 +46,9 @@
 </template>
 
 <script>
-import Return from '@/components/shared/Return.vue'
 
 export default {
-  name: 'CaixaEletronico',
-  components: {
-    Return
-  },
+  name: 'CashMachine',
   methods: {
     somenteNumero (e) {
       var tecla = window.event ? event.keyCode : e.which
@@ -116,7 +111,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-.caixa-eletronico {
+.cash-machine {
   padding: 0 40px;
 
   &__container {
@@ -222,7 +217,7 @@ export default {
     }
   }
 
-  &__requisitos {
+  &__requirements {
     max-width: 450px;
     margin: 80px auto 0;
     width: 100%;
