@@ -55,6 +55,18 @@
           <p>design by</p>
           <a class="design" href="https://one.com.br/" title="One" target="_blank">One</a>
         </li>
+        <li>
+          <a href="https://www.bradescard.com.br/SiteBradescard" title="bradescard" target="_blank">bradescard</a>
+          <span>2019</span>
+          <p>design by</p>
+          <a class="design" href="https://one.com.br/" title="One" target="_blank">One</a>
+        </li>
+        <li>
+          <a href="https://banco.bradesco/html/classic/promocoes/aplicativo-bradesco-cartoes/index.shtm" title="app bradesco cartões" target="_blank">App Bradesco Cartões</a>
+          <span>2019</span>
+          <p>design by</p>
+          <a class="design" href="https://one.com.br/" title="One" target="_blank">One</a>
+        </li>
       </ol>
     </div>
   </section>
@@ -321,6 +333,7 @@ export default {
           margin-left: 3px;
           margin-right: 3px;
           font-size: 20px;
+          text-transform: lowercase;
 
           @include above(md) {
             font-size: 24px;
