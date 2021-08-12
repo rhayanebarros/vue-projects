@@ -47,25 +47,25 @@
           <a href="https://www.toyotagazooracing.com.br/" title="gazoo racing" target="_blank">toyota gazoo racing</a>
           <span>2020</span>
           <p>design by</p>
-          <a class="design" href="https://www.sapientag2.com.br/prodigious/" title="Prodigious" target="_blank">Prodigious</a>
+          <a class="design" href="https://www.sapientag2.com.br/prodigious/" title="prodigious" target="_blank">Prodigious</a>
         </li>
         <li>
           <a href="https://banco.bradesco/html/classic/veloe/index.shtm" title="bradesco - veloe" target="_blank">bradesco veloe</a>
           <span>2019</span>
           <p>design by</p>
-          <a class="design" href="https://one.com.br/" title="One" target="_blank">One</a>
+          <a class="design" href="https://one.com.br/" title="one" target="_blank">One</a>
         </li>
         <li>
           <a href="https://www.bradescard.com.br/SiteBradescard" title="bradescard" target="_blank">bradescard</a>
           <span>2019</span>
           <p>design by</p>
-          <a class="design" href="https://one.com.br/" title="One" target="_blank">One</a>
+          <a class="design" href="https://one.com.br/" title="one" target="_blank">One</a>
         </li>
         <li>
           <a href="https://banco.bradesco/html/classic/promocoes/aplicativo-bradesco-cartoes/index.shtm" title="app bradesco cartões" target="_blank">App Bradesco Cartões</a>
           <span>2019</span>
           <p>design by</p>
-          <a class="design" href="https://one.com.br/" title="One" target="_blank">One</a>
+          <a class="design" href="https://one.com.br/" title="one" target="_blank">One</a>
         </li>
       </ol>
     </div>
