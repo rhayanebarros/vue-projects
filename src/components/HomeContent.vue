@@ -41,7 +41,7 @@
           <router-link to="/bank" title="caixa eletrônico">caixa eletrônico</router-link><span>2020</span>
         </li>
         <li>
-          <router-link to="/about" title="todo list">todo list</router-link><span>2020</span>
+          <router-link to="/todo-list" title="todo list">todo list</router-link><span>2020</span>
         </li>
         <li>
           <a href="https://www.toyotagazooracing.com.br/" title="gazoo racing" target="_blank">toyota gazoo racing</a>
@@ -64,6 +64,18 @@
         <li>
           <a href="https://banco.bradesco/html/classic/promocoes/aplicativo-bradesco-cartoes/index.shtm" title="app bradesco cartões" target="_blank">App Bradesco Cartões</a>
           <span>2019</span>
+          <p>design by</p>
+          <a class="design" href="https://one.com.br/" title="one" target="_blank">One</a>
+        </li>
+        <li>
+          <a href="https://banco.bradesco/cartoesempresariais/" title="cartões empresariais" target="_blank">Cartões Empresariais</a>
+          <span>2021</span>
+          <p>design by</p>
+          <a class="design" href="https://one.com.br/" title="one" target="_blank">One</a>
+        </li>
+        <li>
+          <a href="https://banco.bradesco/beneficioscartoes/" title="benefícios cartões" target="_blank">Benefícios Cartões</a>
+          <span>2022</span>
           <p>design by</p>
           <a class="design" href="https://one.com.br/" title="one" target="_blank">One</a>
         </li>
