@@ -56,7 +56,7 @@
           <a class="design" href="https://one.com.br/" title="one" target="_blank">One</a>
         </li>
         <li>
-          <a href="https://www.bradescard.com.br/SiteBradescard" title="bradescard" target="_blank">bradescard</a>
+          <a href="https://www.bradescard.com.br/bradescard/html/index.html" title="bradescard" target="_blank">bradescard</a>
           <span>2019</span>
           <p>design by</p>
           <a class="design" href="https://one.com.br/" title="one" target="_blank">One</a>
